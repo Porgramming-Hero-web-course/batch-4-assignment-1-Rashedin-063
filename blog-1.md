@@ -54,7 +54,8 @@ console.log(admin);
 Here, AdminUser combines both User and Admin, so the object must have properties from both types.
 
 Key Differences: Union vs. Intersection
-| Feature | Union Type (|) | Intersection Type (&) | |-----------------|--------------------------------|-------------------------------------| | Meaning | "This or that" | "This and that" | | Use Cases | Flexible inputs, dynamic data | Combining multiple roles/structures |
+| Feature | Union Type (|) | Intersection Type (&) | |-----------------  |-----------------  |-----------------
+| Meaning | "This or that" | "This and that" | | Use Cases | Flexible inputs, dynamic data | Combining multiple roles/structures |
 
 Conclusion
 Union Types (|) are useful when a variable can hold multiple types.
