@@ -1,4 +1,4 @@
-// problem 4
+// solution to problem 4
 
 type Circle = { shape: 'circle'; radius: number };
 type Rectangle = { shape: 'rectangle'; width: number; height: number };

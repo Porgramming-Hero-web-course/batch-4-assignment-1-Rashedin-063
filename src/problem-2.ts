@@ -1,4 +1,4 @@
-// problem 2
+// solution to problem 2
 
 function removeDuplicates(numbers: number[]): number[] { 
   return [...new Set(numbers)]

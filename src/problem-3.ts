@@ -1,4 +1,4 @@
-// problem 3
+// solution to problem 3
 
 function countWordOccurrences(sentenceInput: string, wordInput: string): number { 
   const sentenceToLowerCase = sentenceInput.toLowerCase();
