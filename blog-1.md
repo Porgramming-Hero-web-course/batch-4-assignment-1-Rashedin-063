@@ -22,8 +22,6 @@ Here, the function printId accepts either a string or a number, making it flexib
 Type Guards with Union Types
 We can use type guards to narrow down the type within a union.
 
-typescript
-Copy code
 function processValue(value: string | number): void {
   if (typeof value === "string") {
     console.log("String length:", value.length);
@@ -40,8 +38,6 @@ Intersection Types
 An intersection type combines multiple types, meaning a variable must satisfy all types at once. We define it using the ampersand (&) symbol.
 
 Example:
-typescript
-Copy code
 type User = { name: string; email: string };
 type Admin = { adminLevel: number; accessRights: string[] };
 
