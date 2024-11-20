@@ -15,13 +15,14 @@ function printId(id: string | number): void {
 
 printId(123);         // Accepts number
 printId("ABC123");    // Accepts string
-
+```
 
 Here, the function printId accepts either a string or a number, making it flexible for different data types.
 
 Type Guards with Union Types
 We can use type guards to narrow down the type within a union.
 
+```typescript
 function processValue(value: string | number): void {
   if (typeof value === "string") {
     console.log("String length:", value.length);
@@ -32,12 +33,15 @@ function processValue(value: string | number): void {
 
 processValue("Hello");
 processValue(42);
+```
+
 In this case, TypeScript narrows the type based on the typeof check, ensuring we handle strings and numbers differently.
 
 Intersection Types
 An intersection type combines multiple types, meaning a variable must satisfy all types at once. We define it using the ampersand (&) symbol.
 
 Example:
+```typescript
 type User = { name: string; email: string };
 type Admin = { adminLevel: number; accessRights: string[] };
 
@@ -51,6 +55,7 @@ const admin: AdminUser = {
 };
 
 console.log(admin);
+```
 Here, AdminUser combines both User and Admin, so the object must have properties from both types.
 
 Key Differences: Union vs. Intersection
